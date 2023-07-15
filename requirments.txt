@@ -1,0 +1,6 @@
+flask==2.0.0
+moviepy
+git+https://github.com/deezer/spleeter
+werkzeug
+numpy==1.22
+pytube==15.0.0
