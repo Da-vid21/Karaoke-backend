@@ -80,7 +80,6 @@ def extractAudio(vid_path, vid_name):
         audio.write_audiofile(audioName)
     
     returnFiles = splitMusic(vid_name)
-    print(returnFiles)
     return returnFiles
 
 

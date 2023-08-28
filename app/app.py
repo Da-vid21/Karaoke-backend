@@ -3,11 +3,6 @@ import os
 from src import main
 
 app = Flask(__name__)
-
-@app.route('/', methods=['GET'])
-def index():
-    return render_template('index.html')
-
 # This one is to process youtube Links
 @app.route('/YTLink', methods=['POST'])
 def processYT():
@@ -32,4 +27,4 @@ def download_video(filename):
     file_path = os.path.join('uploads', filename)
     return send_file(file_path, as_attachment=False)
 if __name__ == '__main__':
-    app.run(debug=False)
+    app.run(debug=False, port=8000, host='0.0.0.0')
